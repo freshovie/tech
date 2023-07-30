@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;400;700&display=swap');
+
+*{
+    font-family: "DM Sans";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/assets/Image.png);
+    background-color: #2F1893;
+    padding: 2rem 0 2rem 2rem;
+
+}
+
+.navbar h2{
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.navbar li{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-weight: 500;
+
+}
+
+.navbar{
+    display: flex;
+    gap: 3rem;
+}
+
+
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top h2 {
+    color: #fff;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 2rem;
+}
+
+.btn button{
+    border: none;
+    outline: none;
+    background-color: #25DAC5;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 14px;
+    margin-right: 70px;
+
+
+}
+.suits h1{
+    color: #fff;
+    font-size: 45px;
+    margin-top: 4rem;
+    margin-bottom: 20px;
+}
+.suits p{
+    color: #fff;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 1rem;
+}
+
+.friendly{
+    display: flex;
+    gap: 50px;
+    margin-top: 5.3rem;
+}
+.friendly h4{
+    color: #fff;
+    line-height: 13px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    margin-top: 18px;
+    
+}
+.friendly p{
+    color: #fff;
+    line-height: 22px;
+}
+
+.main-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bee img{
+    margin-top: 2.5rem;
+    width: 490px;
+
+}
+
+.ham{
+    display: none;
+    color: #fff;
+}
+
+
+@media screen and (max-width:600px) {
+    body{
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    .navbar{
+        gap: 0;
+        justify-content: space-between;
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .ham{
+        display: block;
+    }
+    
+    .bee img{
+       width: 100%;
+    }
+    .main-section{
+        flex-direction: column;
+    }
+    .bee{
+        width: 100%;
+    }
+    .btn button{
+        margin-right: 0;
+    }
+}
